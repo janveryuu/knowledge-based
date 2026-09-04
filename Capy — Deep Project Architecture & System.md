@@ -1,24 +1,32 @@
-# **🧋 Capy — Deep Project Architecture & System** Documentation
-
-```yaml
 ---
-title: Capy - Cozy AI Mood & Travel Companion
+title: "Capy: Cozy AI Mood & Travel Companion"
+type: project-architecture
+category: mental-health-wellness
+status: Production / Active
+version: 1.0.0
+mascot: Capy the Capybara
+platforms:
+  - Next.js 16 (PWA)
+  - Responsive Mobile Web
 tags:
   - project/capy
-  - tech/nextjs16
-  - tech/react19
-  - tech/prisma
-  - tech/postgresql
-  - tech/gemini-ai
-  - tech/tailwind4
+  - wellness
+  - mood-tracker
   - architecture/fullstack
-date: 2026-09-04
-status: Production / Active
+related_projects:
+  - "[[Pawi — AI-Powered Personal Finance Tracker — Complete Project Architecture & Knowledge Base|Pawi Financial Tracker]]"
+tech_stack:
+  - "[[Next.js]]"
+  - "[[PostgreSQL]]"
+  - "[[Artificial Intelligence & LLMs]]"
+  - "[[Tailwind CSS]]"
+dashboard: "[[Home]]"
+github_repo: janveryuu/capy-app
 production_web: https://capy-app-fawn.vercel.app/
 production_mobile: https://capy-app-wtj1.vercel.app/login
-repo: janveryuu/capy-app
 ---
-```
+
+# **🧋 Capy — Deep Project Architecture & System** Documentation
 
 > [!ABSTRACT] Executive Summary
 > **Capy** is a full-stack, mindfulness-oriented web and mobile application designed around a cozy, warm Capybara theme. It blends **mental health journaling and mood tracking**, **mindful travel exploration and planning**, a **box-breathing relaxation engine**, and an **empathetic real-time conversational AI companion** powered by Google Gemini.
