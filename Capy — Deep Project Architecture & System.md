@@ -15,6 +15,7 @@ tags:
   - architecture/fullstack
 related_projects:
   - "[[Pawi — AI-Powered Personal Finance Tracker — Complete Project Architecture & Knowledge Base|Pawi Financial Tracker]]"
+  - "[[Dormosaur — AI-Powered Student Campus & Dorm Companion — Complete Project Architecture & Knowledge Base|Dormosaur Campus Companion]]"
 tech_stack:
   - "[[Next.js]]"
   - "[[PostgreSQL]]"

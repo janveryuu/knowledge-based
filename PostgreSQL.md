@@ -11,18 +11,19 @@ tags:
 projects:
   - "[[Pawi — AI-Powered Personal Finance Tracker — Complete Project Architecture & Knowledge Base|Pawi Financial Tracker]]"
   - "[[Capy — Deep Project Architecture & System|Capy Mood & Travel Companion]]"
+  - "[[Dormosaur — AI-Powered Student Campus & Dorm Companion — Complete Project Architecture & Knowledge Base|Dormosaur Campus Companion]]"
 ---
 
 # PostgreSQL Database Architecture
 
 > [!INFO] **Database Overview**
-> **PostgreSQL** provides the ACID-compliant relational data foundation for both application ecosystems, guaranteeing transactional integrity across financial ledgers and personal mental wellness records.
+> **PostgreSQL** provides the ACID-compliant relational data foundation across all three application ecosystems, guaranteeing transactional integrity across financial ledgers, wellness records, and academic schedules.
 
 ---
 
-## Architectural Paradigms
+## Architectural Paradigms Across Ecosystems
 
-`mermaid
+```mermaid
 graph TD
     User([Client Application]) --> Auth[Authentication Layer]
     Auth --> RLS[Row Level Security / ORM Guard]
@@ -41,23 +42,34 @@ graph TD
         PG --> Journal[(journal_entries & tags)]
         PG --> Breathing[(breathing_sessions)]
     end
-`
+    
+    subgraph Dormosaur Implementation
+        PG --> Profiles[(student_profiles)]
+        PG --> Classes[(classes & timetable)]
+        PG --> Alarms[(lead_time_alarms)]
+        PG --> Deadlines[(academic_deadlines)]
+        PG --> PushSubs[(push_subscriptions)]
+    end
+```
 
-### 1. Pawi: Managed Supabase PostgreSQL with Row Level Security (RLS)
-- Declarative tenant isolation: every query enforces uth.uid() = user_id.
+### 1. Pawi: Supabase PostgreSQL with Row Level Security (RLS)
+- Declarative tenant isolation: every query enforces `auth.uid() = user_id`.
 - Real-time subscription pipelines for instant multi-device balance reflections.
-- Automated triggers: budget recalculations, savings streak tracking, and ledger balancing.
 
 ### 2. Capy: Prisma ORM over PostgreSQL
-- Strictly typed database schemas and migration workflows (prisma/schema.prisma).
-- Efficient relational queries for mood analytics, streak aggregations, and wellness histories.
-- Connection pooling for responsive serverless invocation.
+- Strictly typed database schemas and migration workflows (`prisma/schema.prisma`).
+- Relational queries for mood analytics, streak aggregations, and wellness histories.
+
+### 3. Dormosaur: Supabase PostgreSQL with Connection Pooling
+- User-scoped timetable storage, dynamic alarm triggers, and deadline tracking.
+- Web-push device token management (`endpoint`, `p256dh`, `auth`).
 
 ---
 
 ## Projects Implementing PostgreSQL
 - [[Pawi — AI-Powered Personal Finance Tracker — Complete Project Architecture & Knowledge Base|Pawi: AI-Powered Personal Finance Tracker]] (Supabase PG 15 + RLS)
 - [[Capy — Deep Project Architecture & System|Capy: Cozy AI Mood & Travel Companion]] (Prisma ORM + PostgreSQL)
+- [[Dormosaur — AI-Powered Student Campus & Dorm Companion — Complete Project Architecture & Knowledge Base|Dormosaur: AI-Powered Student Campus & Dorm Companion]] (Supabase PG 15 + RLS)
 
 ---
 
