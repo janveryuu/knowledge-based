@@ -17,6 +17,7 @@ tags:
 related_projects:
   - "[[Pawi — AI-Powered Personal Finance Tracker — Complete Project Architecture & Knowledge Base|Pawi Financial Tracker]]"
   - "[[Capy — Deep Project Architecture & System|Capy Mood & Travel Companion]]"
+  - "[[Janver Manlapaz — 3D Interactive Developer Portfolio — Complete Project Architecture & Knowledge Base|Janver Manlapaz 3D Portfolio]]"
 tech_stack:
   - "[[Next.js]]"
   - "[[PostgreSQL]]"
