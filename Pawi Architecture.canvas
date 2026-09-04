@@ -1,125 +1,20 @@
 {
-  "nodes": [
-    {
-      "id": "node_mascot",
-      "type": "text",
-      "text": "## Pawi the Pawikan\n*\"Save smarter, slow and steady\"*\n\n- **Symbolism**: Resilience & compound growth\n- **Persona**: Calm, empathetic financial mentor\n- **Domain**: Personal budget, wallets & goals",
-      "x": -450,
-      "y": 0,
-      "width": 320,
-      "height": 220,
-      "color": "4"
-    },
-    {
-      "id": "node_frontend",
-      "type": "text",
-      "text": "## Next.js 16 PWA Frontend\n- **Framework**: React 19 + App Router\n- **Styling**: Tailwind CSS + Dark Mode\n- **Icons**: Lucide React (Clean SVG, no emojis)\n- **Dialogs**: Viewport-portaled modals\n- **Anti-Spam**: Block >= 4 repeat characters",
-      "x": -80,
-      "y": -220,
-      "width": 360,
-      "height": 260,
-      "color": "5"
-    },
-    {
-      "id": "node_mobile",
-      "type": "text",
-      "text": "## Android Native TWA\n- **Binary**: `Pawi-V2.apk`\n- **Architecture**: Trusted Web Activity (TWA)\n- **Build Tool**: Gradle 8.4\n- **Integrations**: Camera stream, offline PWA cache",
-      "x": -80,
-      "y": 120,
-      "width": 360,
-      "height": 240,
-      "color": "3"
-    },
-    {
-      "id": "node_ai",
-      "type": "text",
-      "text": "## Tiered AI Conversational Engine\n- **Tier 1**: Groq LLaMA 3.3 70B / Qwen 2.5 32B\n- **Tier 2**: xAI Grok / Google Gemini 3.7 Flash\n- **Tier 3**: Local regex NLP action parser\n- **Guardrails**: Rejects off-topic (cooking recipes, jailbreaks)\n- **Rate Limiting**: 20 requests / hour",
-      "x": 340,
-      "y": -220,
-      "width": 380,
-      "height": 260,
-      "color": "6"
-    },
-    {
-      "id": "node_camera",
-      "type": "text",
-      "text": "## Live Camera QR Scanner\n- **Stream**: `getUserMedia` camera viewfinder\n- **Detector**: BarcodeDetector API\n- **Standards**: EMVCo QR Ph parser\n- **Auto-Fill**: Extracts merchant & amount to wallet",
-      "x": 340,
-      "y": 120,
-      "width": 380,
-      "height": 240,
-      "color": "2"
-    },
-    {
-      "id": "node_db",
-      "type": "text",
-      "text": "## Supabase PostgreSQL 15\n- **Security**: Row Level Security (RLS)\n- **Data Isolation**: Strict user-level policies\n- **Ledgers**: Multi-wallet balance consistency\n- **Sync**: Offline IndexedDB ➔ Cloud Sync",
-      "x": 780,
-      "y": -50,
-      "width": 350,
-      "height": 250,
-      "color": "1"
-    },
-    {
-      "id": "node_qa",
-      "type": "text",
-      "text": "## QA Remediation (v2.0.1)\n- [x] Enforced anti-spam on all input fields\n- [x] Fixed Onboarding Goal step order logic bug\n- [x] Deterministic AI guardrails & deflection\n- [x] Implemented 20 req/hr chat rate limiter\n- [x] Integrated real live camera QR scanner\n- [x] Portaled all 8 modals to document.body\n- [x] 14 Test Suites (177 tests passing)\n- [x] Rebuilt signed release `Pawi-V2.apk`",
-      "x": 120,
-      "y": 420,
-      "width": 440,
-      "height": 280,
-      "color": "4"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1",
-      "fromNode": "node_mascot",
-      "fromSide": "right",
-      "toNode": "node_frontend",
-      "toSide": "left"
-    },
-    {
-      "id": "e2",
-      "fromNode": "node_frontend",
-      "fromSide": "bottom",
-      "toNode": "node_mobile",
-      "toSide": "top"
-    },
-    {
-      "id": "e3",
-      "fromNode": "node_frontend",
-      "fromSide": "right",
-      "toNode": "node_ai",
-      "toSide": "left"
-    },
-    {
-      "id": "e4",
-      "fromNode": "node_frontend",
-      "fromSide": "right",
-      "toNode": "node_camera",
-      "toSide": "left"
-    },
-    {
-      "id": "e5",
-      "fromNode": "node_ai",
-      "fromSide": "right",
-      "toNode": "node_db",
-      "toSide": "left"
-    },
-    {
-      "id": "e6",
-      "fromNode": "node_camera",
-      "fromSide": "right",
-      "toNode": "node_db",
-      "toSide": "left"
-    },
-    {
-      "id": "e7",
-      "fromNode": "node_qa",
-      "fromSide": "top",
-      "toNode": "node_frontend",
-      "toSide": "bottom"
-    }
-  ]
+	"nodes":[
+		{"id":"node_mascot","type":"text","text":"## Pawi the Pawikan\n*\"Save smarter, slow and steady\"*\n\n- **Symbolism**: Resilience & compound growth\n- **Persona**: Calm, empathetic financial mentor\n- **Domain**: Personal budget, wallets & goals","x":-450,"y":0,"width":320,"height":220,"color":"4"},
+		{"id":"node_frontend","type":"text","text":"## Next.js 16 PWA Frontend\n- **Framework**: React 19 + App Router\n- **Styling**: Tailwind CSS + Dark Mode\n- **Icons**: Lucide React (Clean SVG, no emojis)\n- **Dialogs**: Viewport-portaled modals\n- **Anti-Spam**: Block >= 4 repeat characters","x":-80,"y":-220,"width":360,"height":260,"color":"5"},
+		{"id":"node_mobile","type":"text","text":"## Android Native TWA\n- **Binary**: `Pawi-V2.apk`\n- **Architecture**: Trusted Web Activity (TWA)\n- **Build Tool**: Gradle 8.4\n- **Integrations**: Camera stream, offline PWA cache","x":-80,"y":120,"width":360,"height":240,"color":"3"},
+		{"id":"node_ai","type":"text","text":"## Tiered AI Conversational Engine\n- **Tier 1**: Groq LLaMA 3.3 70B / Qwen 2.5 32B\n- **Tier 2**: xAI Grok / Google Gemini 3.7 Flash\n- **Tier 3**: Local regex NLP action parser\n- **Guardrails**: Rejects off-topic (cooking recipes, jailbreaks)\n- **Rate Limiting**: 20 requests / hour","x":340,"y":-220,"width":380,"height":260,"color":"6"},
+		{"id":"node_camera","type":"text","text":"## Live Camera QR Scanner\n- **Stream**: `getUserMedia` camera viewfinder\n- **Detector**: BarcodeDetector API\n- **Standards**: EMVCo QR Ph parser\n- **Auto-Fill**: Extracts merchant & amount to wallet","x":340,"y":120,"width":380,"height":240,"color":"2"},
+		{"id":"node_db","type":"text","text":"## Supabase PostgreSQL 15\n- **Security**: Row Level Security (RLS)\n- **Data Isolation**: Strict user-level policies\n- **Ledgers**: Multi-wallet balance consistency\n- **Sync**: Offline IndexedDB ➔ Cloud Sync","x":780,"y":-50,"width":350,"height":250,"color":"1"},
+		{"id":"node_qa","type":"text","text":"## QA Remediation (v2.0.1)\n- [x] Enforced anti-spam on all input fields\n- [x] Fixed Onboarding Goal step order logic bug\n- [x] Deterministic AI guardrails & deflection\n- [x] Implemented 20 req/hr chat rate limiter\n- [x] Integrated real live camera QR scanner\n- [x] Portaled all 8 modals to document.body\n- [x] 14 Test Suites (177 tests passing)\n- [x] Rebuilt signed release `Pawi-V2.apk`","x":120,"y":420,"width":440,"height":280,"color":"4"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"node_mascot","fromSide":"right","toNode":"node_frontend","toSide":"left"},
+		{"id":"e2","fromNode":"node_frontend","fromSide":"bottom","toNode":"node_mobile","toSide":"top"},
+		{"id":"e3","fromNode":"node_frontend","fromSide":"right","toNode":"node_ai","toSide":"left"},
+		{"id":"e4","fromNode":"node_frontend","fromSide":"right","toNode":"node_camera","toSide":"left"},
+		{"id":"e5","fromNode":"node_ai","fromSide":"right","toNode":"node_db","toSide":"left"},
+		{"id":"e6","fromNode":"node_camera","fromSide":"right","toNode":"node_db","toSide":"left"},
+		{"id":"e7","fromNode":"node_qa","fromSide":"top","toNode":"node_frontend","toSide":"bottom"}
+	]
 }
