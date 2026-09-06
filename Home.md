@@ -27,6 +27,7 @@ tags:
 | **Pawi Financial Tracker** | Full Stack / FinTech SaaS | Pawi the Pawikan (*Compound savings*) | Next.js 16, Supabase, Groq/Gemini, Android TWA | `v2.0.1 Active` | [[Pawi — AI-Powered Personal Finance Tracker — Complete Project Architecture & Knowledge Base\|Pawi Documentation]]<br>[GitHub Repo](https://github.com/janveryuu/pawi-financial-tracker) · [APK Release](https://github.com/janveryuu/pawi-financial-tracker) |
 | **Capy Mood & Travel** | Full Stack / HealthTech | Capy the Capybara (*Calm wellness companion*) | Next.js 16, React 19, Prisma, PostgreSQL, Gemini | `v1.0.0 Active` | [[Capy — Deep Project Architecture & System\|Capy Documentation]]<br>[GitHub Repo](https://github.com/janveryuu/capy-app) · [Web App](https://capy-app-fawn.vercel.app/) |
 | **Dormosaur Campus Companion** | Full Stack / EdTech AI | Dormosaur the Dino (*Smart campus living*) | Next.js 16, Supabase, Gemini 3.6 Flash, Groq, Web Push | `v0.1.0 Active` | [[Dormosaur — AI-Powered Student Campus & Dorm Companion — Complete Project Architecture & Knowledge Base\|Dormosaur Documentation]]<br>[GitHub Repo](https://github.com/janveryuu/dormosaur) · [Web App](https://dormosaur.vercel.app/) |
+| **GymFlow Companion** | Full Stack / Fitness & HealthTech | GymFlow Athletic Monogram (*Peak performance*) | React Native 0.86, Expo SDK 57, TypeScript, Laravel 11, SQLite | `v0.1.0 Active` | [[GymFlow — Offline-First Member-Facing Fitness Companion — Complete Project Architecture & Knowledge Base\|GymFlow Documentation]]<br>[GitHub Repo](https://github.com/janveryuu/GymFlow) |
 
 ---
 
@@ -38,10 +39,12 @@ graph TD
     Dashboard --> Pawi[Pawi Financial Tracker]
     Dashboard --> Capy[Capy Mood & Travel]
     Dashboard --> Dorm[Dormosaur Campus Companion]
+    Dashboard --> GymFlow[GymFlow Fitness Companion]
     
     Portfolio -. Showcases .-> Pawi
     Portfolio -. Showcases .-> Capy
     Portfolio -. Showcases .-> Dorm
+    Portfolio -. Showcases .-> GymFlow
     
     Portfolio --> ThreeJS[[Three.js & 3D Web Graphics]]
     Portfolio --> Tailwind[[Tailwind CSS]]
@@ -53,18 +56,22 @@ graph TD
     Pawi --> PG[[PostgreSQL]]
     Capy --> PG
     Dorm --> PG
+    GymFlow --> PG
     
     Pawi --> AI[[Artificial Intelligence & LLMs]]
     Capy --> AI
     Dorm --> AI
+    GymFlow --> AI
     
     Pawi --> Mobile[[Mobile Applications & TWA]]
     Capy --> Mobile
     Dorm --> Mobile
+    GymFlow --> Mobile
     
     Pawi --> Tailwind
     Capy --> Tailwind
     Dorm --> Tailwind
+    GymFlow --> Tailwind
 ```
 
 ---
@@ -90,3 +97,4 @@ graph TD
 * **Pawi Repository**: [janveryuu/pawi-financial-tracker](https://github.com/janveryuu/pawi-financial-tracker)
 * **Capy Repository**: [janveryuu/capy-app](https://github.com/janveryuu/capy-app)
 * **Dormosaur Repository**: [janveryuu/dormosaur](https://github.com/janveryuu/dormosaur)
+* **GymFlow Repository**: [janveryuu/GymFlow](https://github.com/janveryuu/GymFlow)
